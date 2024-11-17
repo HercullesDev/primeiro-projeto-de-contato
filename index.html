@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Irmãos Bros</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/logo-header.png" alt="logo mario">
+        <a>Home</a>
+        <a href="Nossos-Serviços.html">Nossos Serviços</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do mario bros" class="logo-mario">
+            <p>Mario e seu irmão Luigi são encanadores do Brooklyn</p>
+            <p>Em Nova York. Um dia, eles vão parar no reino dos cogumelos,
+                governado pela Princesa Peach. O local é ameaçado por Bowser, rei dos Koopas, que faz de tudo para
+                conseguir
+                reinar em todos os lugares.</p>
+
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div>
+            <img src="./img/mario.png" alt="Logo Mario e Luide" class="imagem-mario-e-luide">
+        </div>
+    </div>
+
+    <div class="video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <a href="https://w.app/DEVHE" class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="Link para o whatsapp">
+    </a>
+
+    <div class="mascara"></div>
+    <div onclick="esconderForm()" class="mascara-formulario"></div>
+
+    <form 
+        class="formulario-fale-conosco" 
+        action="https://formcarry.com/s/YrpdVJd9IPw" 
+        method="POST"
+        enctype="multipart/form-data">
+            <input placeholder="Seu nome" type="text" name="nome">
+            <input placeholder="Seu telefone/whatsapp" type="tel" name="telefone">
+            <input placeholder="Seu E-mail" type="email" name="e-mail">
+            <textarea placeholder="Digite seu problema aqui." name="Dúvidas"></textarea>
+            <button type="submit">Pedir Orçamento</button>
+    </form>
+</body>
+<script src="scripts.js"></script>
+
+</html>
